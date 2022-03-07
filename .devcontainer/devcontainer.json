@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.4/containers/ubuntu
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
+		// Use hirsute or bionic on local arm64/Apple Silicon.
+		"args": { "VARIANT": "focal" }
+	},
+	"runArgs": ["--privileged"],
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "devel",
+	// "features": {
+	// 	"python": "latest"
+	// },
+
+	// "mounts": [
+	// 	"source=/home/ubuntu/.azure,target=/home/doramiope/.azure,type=bind,consistency=cached",
+	// 	"source=/home/ubuntu/.ssh,target=/home/doramiope/.ssh,type=bind,consistency=cached",
+	// ],
+
+	"workspaceFolder": "/workspace/AM2302",
+	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/AM2302,target=/workspace/AM2302,type=bind,consistency=cached"
+}
