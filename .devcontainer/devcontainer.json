@@ -32,10 +32,10 @@
 	// 	"PROJECT_NAME": "neopixel"
 	// },
 
-	// "mounts": [
-	// 	"source=/home/ubuntu/.azure,target=/home/doramiope/.azure,type=bind,consistency=cached",
-	// 	"source=/home/ubuntu/.ssh,target=/home/doramiope/.ssh,type=bind,consistency=cached",
-	// ],
+	"mounts": [
+		// "source=/home/ubuntu/.azure,target=/home/doramiope/.azure,type=bind,consistency=cached",
+		"source=/home/ubuntu/.ssh,target=/home/devel/.ssh,type=bind,consistency=cached",
+	],
 
 	"workspaceFolder": "/workspace/neopixel",
 	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/neopixel,target=/workspace/neopixel,type=bind,consistency=cached"
