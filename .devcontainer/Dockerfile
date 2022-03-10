@@ -19,3 +19,4 @@ RUN dpkg --add-architecture armhf && \
     apt --yes install python3 python3-pip python-rpi.gpio git && \
     pip install RPi.gpio && \
     echo "devel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 
+RUN pip3 install adafruit-circuitpython-neopixel rpi_ws281x
