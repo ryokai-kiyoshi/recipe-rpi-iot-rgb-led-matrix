@@ -16,6 +16,6 @@ RUN dpkg --add-architecture armhf && \
     wget https://project-downloads.drogon.net/wiringpi-latest.deb && \
     dpkg -i wiringpi-latest.deb && \
     useradd -m -d /home/devel -U -s /usr/bin/bash devel && \
-    apt --yes install python3 python3-pip python-rpi.gpio && \
+    apt --yes install python3 python3-pip python-rpi.gpio git && \
     pip install RPi.gpio && \
     echo "devel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 

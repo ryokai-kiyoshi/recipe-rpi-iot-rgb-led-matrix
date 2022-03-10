@@ -28,11 +28,15 @@
 	// 	"python": "latest"
 	// },
 
+	// "remoteEnv": {
+	// 	"PROJECT_NAME": "neopixel"
+	// },
+
 	// "mounts": [
 	// 	"source=/home/ubuntu/.azure,target=/home/doramiope/.azure,type=bind,consistency=cached",
 	// 	"source=/home/ubuntu/.ssh,target=/home/doramiope/.ssh,type=bind,consistency=cached",
 	// ],
 
-	"workspaceFolder": "/workspace/AM2302",
-	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/AM2302,target=/workspace/AM2302,type=bind,consistency=cached"
+	"workspaceFolder": "/workspace/neopixel",
+	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/neopixel,target=/workspace/neopixel,type=bind,consistency=cached"
 }

@@ -1,0 +1,3 @@
+{
+    "docker.host": "ssh://rpi-docker-host01.local"
+}
