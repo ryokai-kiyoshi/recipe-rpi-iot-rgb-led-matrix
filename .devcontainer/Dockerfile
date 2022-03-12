@@ -20,3 +20,11 @@ RUN dpkg --add-architecture armhf && \
     pip install RPi.gpio && \
     echo "devel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers 
 RUN pip3 install adafruit-circuitpython-neopixel rpi_ws281x
+RUN apt install python3-dev python3-pillow -y && \
+    cd /usr/local/src && \
+    git clone https://github.com/io-oi-app/rpi-rgb-led-matrix.git && \
+    cd rpi-rgb-led-matrix && \
+    make && \
+    cd bindings/python && \
+    make build-python PYTHON=$(which python3) && \
+    make install-python PYTHON=$(which python3)

@@ -37,6 +37,6 @@
 		"source=/home/ubuntu/.ssh,target=/home/devel/.ssh,type=bind,consistency=cached",
 	],
 
-	"workspaceFolder": "/workspace/neopixel",
-	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/neopixel,target=/workspace/neopixel,type=bind,consistency=cached"
+	"workspaceFolder": "/workspace/rgb-led-matrix",
+	"workspaceMount": "source=/home/ubuntu/workspaces/rpi-iot/rgb-led-matrix,target=/workspace/rgb-led-matrix,type=bind,consistency=cached"
 }
